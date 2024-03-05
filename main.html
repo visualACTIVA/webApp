@@ -1,0 +1,61 @@
+<main>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Music Of the World</h1>
+        <div class="row center">
+          <h4 class="header col s12 light">Music + Meeting</h4>
+        </div>
+        <div class="row center">
+          <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="/img/43473598c6e3bfea.webp" alt="Unsplashed background img 1"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">
+              <form action="" method="post" id="my_form">
+                <label>Tema</label>
+                <input type="text" name="Tema" /><br>
+                <label>Interprete</label>
+                <input type="text" name="Interprete" /><br>
+                <label>Url</label>
+                <input type="url" name="url" /><br>
+                <button class="btn btn-success m-3" onclick="crearTablaSong()"> GO!</button>
+                <div id="server-results"><!-- For server results --></div>
+              </form>
+            </h5>
+            <p class="light">Add a Song to a PlayList to enlarge the meeting/Party</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center"><a href="playlists/index.html"> Open a Music Space/ PlayLists</a></h5>
+            <p class="light">By add music that You Love, and telling people why You do love that musics is how we were
+              able to create a Space that incorporates components of Music, Ideas, exchannge in all views and animations
+              that provide more feedback to users. Additionally, a single underlying responsive system across all
+              platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+        <div>
+          <div class="icon-block">  
+            <h2 class="center brown-text"><i class="bi bi-flag"></i></h2>
+            <h5 class="center"><a href="places/index.html">Meetings / Parties</a></h5>
+            <button class="btn btn-success m-3" onclick="crearTablaSong()"> GO!</button>
+            <table  class="container--sm mb-4 w-50" id="songList"></table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

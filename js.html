@@ -1,0 +1,50 @@
+<script>
+    function crearTablaSong() {
+        google.script.run.withSuccessHandler(
+            
+      
+               
+
+            function (obj) {
+
+                let tabla = document.createElement('table');
+                let tablaHeader = document.createElement('thead');
+                let tablaBody = document.createElement('tbody');
+
+                Array.from(obj).forEach((filaActual,i)=> {
+
+                        let fila = document.createElement('tr');
+                        filaActual.forEach(celdaActual => {
+                            let celda = document.createElement('td');
+                            celda.textContent = celdaActual;
+                            fila.appendChild(celda);
+                        });
+                        if(i == 0)
+                        {
+
+                              tablaHeader.appendChild(fila);
+                              tabla.appendChild(tablaHeader);
+                        }
+
+                        else
+                        {
+
+                            tablaBody.appendChild(fila);
+                        }
+                       
+                    });
+                tabla.appendChild(tablaBody);
+                tablaHeader.classList.add('table-dark');
+
+                tabla.classList.add('table','table-striped','border','border-3');
+
+                document.getElementById('songList').appendChild(tabla);
+            }
+
+
+        ).obtenerSong();
+
+    }
+
+
+</script>
